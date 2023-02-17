@@ -1,0 +1,15 @@
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph {
+  border: thick;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
