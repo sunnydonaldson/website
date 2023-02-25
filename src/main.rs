@@ -13,8 +13,8 @@ async fn hello(data: web::Data<AppData>) -> impl Responder {
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
+            .service(fs::Files::new("/static", "static").show_files_listing())
             .service(hello)
-            .service(fs::Files::new("/static", "./static").show_files_listing())
             .app_data(
                 web::Data::new(AppData {
                     tmpl: Tera::new("templates/**/*.html").unwrap()
