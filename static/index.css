@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-family: DM Serif Display;
+  font-family: Montserrat;
   display: block;
   font-size: 3rem;
   letter-spacing: 0.25rem;
@@ -68,4 +68,9 @@ h1 {
   margin: 0;
   border: 0;
   padding: 0 2% 0;
+}
+
+.block {
+  padding: 0;
+  min-height: 100vh;
 }
